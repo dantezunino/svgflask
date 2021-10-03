@@ -1,7 +1,13 @@
-<h1>Testing {{ userserv }}</h1>
+{% extends '__layout.html' %}
 
-<h2>List: </h2>
+{% block content %}
+
+<h1 class="is-size-1">Testing {{ userserv }}</h1>
+
+<h2 class="is-size-3">List: </h2>
 
 {% for s in stupid %}
-    <h3>Stupid is: {{ s }}</h3>
+    <h3 class="is-size-3">Stupid is: {{ s }}</h3>
 {% endfor %}
+
+{% endblock %}
