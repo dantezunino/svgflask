@@ -1,9 +1,14 @@
-{% extends '__layout.html' %}
+{% extends 'layout/__layout.html' %}
 
 {% block content %}
+<div class="card has-background-grey-lighter has-text-centered">
+    <p class="is-size-4">Some content</p>
+</div>
 
-<div class="card has-background-grey-lighter">
-    <p class="is-size-4">Come content</p>
+<div>
+    <svg width="100%" height="500">
+        <rect width="100%" height="300" style="fill:rgba(122, 194, 241, 0.87);stroke-width:3;stroke:rgb(0,0,0)" />
+    </svg>
 </div>
 
 {% endblock %}
